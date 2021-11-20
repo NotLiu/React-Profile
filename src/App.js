@@ -12,6 +12,8 @@ import {
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
+import Gallery from "./pages/Gallery";
+import Inktober from "./pages/Inktober";
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +28,7 @@ class App extends Component {
         <div>
           <div id="nav-bar">
             <div id="nav-name">
-              <a href="#">ANDREW LIU</a>
+              <a href="/">ANDREW LIU</a>
               <a href="mailto:aliu@lediur.com" id="email">
                 <i class="fas fa-envelope"></i>
               </a>
@@ -46,8 +48,8 @@ class App extends Component {
                 </Link>
               </li>
               <li>
-                <Link to="/experience" id="experiences">
-                  EXPERIENCES
+                <Link to="/gallery" id="gallery">
+                  GALLERY
                 </Link>
               </li>
             </ul>
@@ -59,8 +61,11 @@ class App extends Component {
             <Route path="/project">
               <Projects />
             </Route>
-            <Route path="/experience">
-              <Experience />
+            <Route path="/gallery">
+              <Gallery />
+            </Route>
+            <Route path="/inktober">
+              <Inktober />
             </Route>
             <Route path="/test"></Route>
           </Switch>

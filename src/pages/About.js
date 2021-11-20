@@ -4,6 +4,9 @@ import banner_legacy from "../img/Sprite-0002.gif";
 import styled from "styled-components";
 import Parallax from "parallax-js";
 
+// resume
+import resume from "../downloads/Resume - 11162021.pdf";
+
 // import parallax images
 import stars_ast from "../img/stars-ast.gif";
 import stars_mts1 from "../img/stars-mts1.gif";
@@ -23,7 +26,7 @@ export default function About() {
     width: 100%;
     height: ${(props) => (props.legacy ? "105vh" : "100%")};
     transform: scale(${(props) => (props.mts ? "1.2" : "1")})
-      translateY(${(props) => (props.mts ? "-1.5em" : "0px")});
+      translateY(${(props) => (props.mts ? "-4em" : "0px")});
   `;
 
   const sceneEl = useRef(null);
@@ -56,7 +59,7 @@ export default function About() {
     if (bannerImgLegacy == false) {
       return (
         <div id="scene" ref={sceneEl}>
-          <div ref={sceneEl} data-depth="0">
+          <div ref={sceneEl} data-depth="0" data-limit-y="20">
             <BannerCSS
               legacy={bannerImgLegacy}
               mts={false}
@@ -125,6 +128,11 @@ export default function About() {
 
       <div id="aboutme">
         <div id="about">A LITTLE ABOUT ME</div>
+        <div id="resume">
+          <a href={resume} download>
+            <i class="fas fa-file-download"></i> Resume PDF
+          </a>
+        </div>
         <div id="about-text">
           <p>
             Hi, I'm Andrew Liu and I'm from Houston, Texas.
