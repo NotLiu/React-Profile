@@ -52,6 +52,9 @@ class App extends Component {
                   GALLERY
                 </Link>
               </li>
+              <li>
+                <a href="https://github.com/NotLiu">GITHUB</a>
+              </li>
             </ul>
           </div>
           <Switch>
