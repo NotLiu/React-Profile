@@ -26,7 +26,7 @@ export default function About() {
     width: ${(props) => (props.mts ? "125vw" : "100vw")};
     height: ${(props) => (props.legacy ? "105vh" : "100%")};
     transform: scale(${(props) => (props.mts ? "1" : "1")})
-      translateY(${(props) => (props.mts ? "-17em" : "0px")})
+      translateY(${(props) => (props.mts ? "-25%" : "0px")})
       translateX(${(props) => (props.mts ? "-15vw" : "0px")});
   `;
 
