@@ -34,12 +34,13 @@ export default function Projects() {
         is the paper describing our work on the project: <br />
         Built using a Python/ Django.py backend, and a React.js frontend
         <br />
-        <a download={SC_paper}>Schwarz Chirstoffel Paper</a>
+        <a href={SC_paper} download>
+          <i class="fas fa-file-download"></i>Schwarz Christoffel Paper
+        </a>
       </text>
       <br />
-      <a href="https://schwarz-christoffel.herokuapp.com/">
-        <i class="fas fa-file-download"></i>WEB APP
-      </a>
+
+      <a href="https://schwarz-christoffel.herokuapp.com/">WEB APP</a>
       <br />
     </div>
   );

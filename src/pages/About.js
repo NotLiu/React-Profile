@@ -26,7 +26,7 @@ export default function About() {
     width: ${(props) => (props.mts ? "125vw" : "100vw")};
     height: ${(props) => (props.legacy ? "105vh" : "100%")};
     transform: scale(${(props) => (props.mts ? "1" : "1")})
-      translateY(${(props) => (props.mts ? "-25%" : "0px")})
+      translateY(${(props) => (props.mts ? "-25%" : "-0%")})
       translateX(${(props) => (props.mts ? "-15vw" : "0px")});
   `;
 
@@ -97,8 +97,13 @@ export default function About() {
           <div ref={sceneEl} data-depth="0.9">
             <BannerCSS legacy={bannerImgLegacy} mts={true} src={stars_mts2} />
           </div>
-          <div ref={sceneEl} data-depth="1.2">
-            <BannerCSS legacy={bannerImgLegacy} mts={true} src={stars_mts1} />
+          <div ref={sceneEl} data-depth="1.1">
+            <BannerCSS
+              legacy={bannerImgLegacy}
+              mts={true}
+              src={stars_mts1}
+              style={{ transform: "translateX(-15vw) translateY(-22%)" }}
+            />
           </div>
         </div>
       );
