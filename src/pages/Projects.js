@@ -1,13 +1,86 @@
 import React, { Component } from "react";
 import Project from "../components/Project";
 
+import SC_paper from "../downloads/SC_REPORT.pdf";
 //project imgs
 import mile666_img from "../img/Mile66(6).gif";
 import incubusMD_img from "../img/IncubusMD.gif";
 import narrative_img from "../img/Narrative.png";
 import restoration_img from "../img/restoration.png";
+import ten65_img from "../img/gamestill.png";
+import duelality_img from "../img/map-crates.png";
+import citation_img from "../img/citation.png";
+import SC_img from "../img/webapp.png";
+import scared_img from "../img/scaredbot.png";
 
 export default function Projects() {
+  let scared_body = (
+    <div>
+      <text>
+        Scared bot is a twitter bot built in Python. Scared bot functions as a
+        webscraper that follows a set of basic sentence construction rules to
+        attempt to tweet what twitter users are scared of.
+        <br />
+        <a href="twitter.com/ScaredBot">LINK</a>
+        <br />
+      </text>
+    </div>
+  );
+  let schwarz_body = (
+    <div>
+      <text>
+        Web Application built for the visualization of Schwarz-Christoffel
+        mapping. Done as our Computer Science major final capstone project. Here
+        is the paper describing our work on the project: <br />
+        Built using a Python/ Django.py backend, and a React.js frontend
+        <br />
+        <a download={SC_paper}>Schwarz Chirstoffel Paper</a>
+      </text>
+      <br />
+      <a href="https://schwarz-christoffel.herokuapp.com/">
+        <i class="fas fa-file-download"></i>WEB APP
+      </a>
+      <br />
+    </div>
+  );
+  let citation_body = (
+    <div>
+      <text>
+        Citation is an episodic mobile and desktop web game made in the amazing
+        open-source Godot Game Engine. You play as a fledgling, if not forgetful
+        scholar of magic on a hunt for your lost notes. In the process, you’ll
+        absorb some common-sense knowledge about what it means to be an ethical
+        scholar. This is our first full game as a studio and we all learned a
+        lot about what it takes to make a performant, interesting and
+        educational web game.
+        <br />
+        Done in collaboration with NYU.
+        <br />
+        <a href="https://citation-34f48.web.app/">Prototype Homepage</a>
+        <br />
+      </text>
+    </div>
+  );
+  let duelality_body = (
+    <div>
+      <text>
+        Done for Global Game Jam 2022 (theme: duality), done remotely! Duelality
+        is a simple game where two players fight a simple best of five rounds
+        fighting game that gets more complex as the echoes from the previous
+        rounds come to life as well
+      </text>
+    </div>
+  );
+  let ten65_body = (
+    <div>
+      <text>
+        Done for Global Game Jam 2021, done remotely! $10.65 An Hour is a
+        mystery game made in Unity. Play as Gale, a gas station attendant right
+        outside of Red Mesa, Arizona as he follows on the trail of a missing
+        girl and a town that's slowly changing.
+      </text>
+    </div>
+  );
   let mile666_body = (
     <div>
       <text>
@@ -71,7 +144,36 @@ export default function Projects() {
   return (
     <div id="projectblock">
       <div id="project">PROJECTS</div>
-
+      <Project
+        proj_title="ScaredBot"
+        proj_date="Spring 2021"
+        proj_img={scared_img}
+        proj_body={scared_body}
+      />
+      <Project
+        proj_title="Citation"
+        proj_date="Summer 2021 - 2022"
+        proj_img={citation_img}
+        proj_body={citation_body}
+      />
+      <Project
+        proj_title="Schwarz Christoffel Mapping"
+        proj_date="Winter 2020 - Summer 2021"
+        proj_img={SC_img}
+        proj_body={schwarz_body}
+      />
+      <Project
+        proj_title="Duelality"
+        proj_date="Spring 2022"
+        proj_img={duelality_img}
+        proj_body={duelality_body}
+      />
+      <Project
+        proj_title="$10.65/hr"
+        proj_date="Spring 2021"
+        proj_img={ten65_img}
+        proj_body={ten65_body}
+      />
       <Project
         proj_title="Mile 666"
         proj_date="Spring 2020"

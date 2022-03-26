@@ -9,13 +9,13 @@ import resume from "../downloads/Resume - 11162021.pdf";
 
 // import parallax images
 import stars_ast from "../img/stars-ast.gif";
-import stars_mts1 from "../img/stars-mts1.gif";
+import stars_mts1 from "../img/stars-mts1.png";
 import stars_mts2 from "../img/stars-mts2.gif";
 import stars_mts3 from "../img/stars-mts3.gif";
 import stars_stars1 from "../img/stars-stars1.gif";
 import stars_stars2 from "../img/stars-stars2.gif";
 import stars_stars3 from "../img/stars-stars3.gif";
-import stars_starsbg from "../img/stars-starsbg.gif";
+import stars_starsbg from "../img/stars-starsbg.png";
 
 export default function About() {
   const [bannerImgLegacy, setBannerImg] = useState(false);
@@ -23,10 +23,11 @@ export default function About() {
   const [legacytitle, setLegacyTitle] = useState("LEGACY");
 
   const BannerCSS = styled.img`
-    width: 100%;
+    width: ${(props) => (props.mts ? "125vw" : "100vw")};
     height: ${(props) => (props.legacy ? "105vh" : "100%")};
-    transform: scale(${(props) => (props.mts ? "1.2" : "1")})
-      translateY(${(props) => (props.mts ? "-4em" : "0px")});
+    transform: scale(${(props) => (props.mts ? "1" : "1")})
+      translateY(${(props) => (props.mts ? "-17em" : "0px")})
+      translateX(${(props) => (props.mts ? "-15vw" : "0px")});
   `;
 
   const sceneEl = useRef(null);
