@@ -102,7 +102,7 @@ export default function About() {
               legacy={bannerImgLegacy}
               mts={true}
               src={stars_mts1}
-              style={{ transform: "translateX(-15vw) translateY(-22%)" }}
+              style={{ transform: "translateX(-15vw) translateY(-20%)" }}
             />
           </div>
         </div>
