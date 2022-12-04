@@ -144,17 +144,25 @@ export default function About() {
             Hi, I'm Andrew Liu and I'm from Houston, Texas.
             <br />
             <br />
-            I graduated from New York University Shanghai (NYUSH) where I
-            received a B.S. in Computer Science, and a minor in Business.
+            I am currently completing a Master's in Computer Science at New York
+            University. I completed my Bachelor's at NYU Shanghai with a major
+            in Computer Science, and a minor in business.
             <br />
             <br />
-            Over the Course of my career at NYU Shanghai, I have learned and
-            honed my skills in:
+            Alongside my graduate studies I am currently doing work as a
+            freelance illustrator and acting as the Art Director for Hallpass
+            Studios. My current interests are in Computer Graphics, Software
+            Engineering, Artificial Intelligence and how these fields can be
+            applied in art.
+            <br />
+            <br />
+            Over the course of my studies at NYU, I have learned and honed my
+            skills in:
             <br />
             <code class="code">
-              React.js, Python, JavaScript, SQL, MongoDB, C, Unity and C#,
-              ExpressJS, NodeJS, Jira Workflow, Adobe Photoshop, Figma, Github
-              terminal, Docker, and Tableau
+              React.js, Python, JavaScript, OpenGL, C++, SQL, MongoDB, C, Unity
+              and C#, ExpressJS, NodeJS, Jira Workflow, Adobe Photoshop, Figma,
+              Github terminal, Docker, and Tableau
             </code>
             <br />
             while taking the courses:
@@ -181,7 +189,8 @@ export default function About() {
             <br />
             My hobbies are in:{" "}
             <code class="code">
-              digital art, video games, game development, and bouldering
+              digital art, video games, game development, bouldering, and random
+              exploration
             </code>
             .
             <br />

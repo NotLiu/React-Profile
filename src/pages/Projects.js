@@ -8,10 +8,11 @@ import incubusMD_img from "../img/IncubusMD.gif";
 import narrative_img from "../img/Narrative.png";
 import restoration_img from "../img/restoration.png";
 import ten65_img from "../img/gamestill.png";
-import duelality_img from "../img/map-crates.png";
+import duelality_img from "../img/duelality.gif";
 import citation_img from "../img/citation.png";
 import SC_img from "../img/webapp.png";
 import scared_img from "../img/scaredbot.png";
+import diced_img from "../img/diced.gif";
 
 export default function Projects() {
   let scared_body = (
@@ -57,8 +58,17 @@ export default function Projects() {
         <br />
         Done in collaboration with NYU.
         <br />
-        <a href="https://citation-34f48.web.app/">Prototype Homepage</a>
+        <a href="https://www.citationgame.com/">Game Homepage</a>
         <br />
+      </text>
+    </div>
+  );
+  let diced_body = (
+    <div>
+      <text>
+        Diced was a game concept created for GMTK 2022 with the theme: "Roll of
+        the Dice". Main mechanics were dice based combat as well as generation
+        of rooms from sides of a dice.
       </text>
     </div>
   );
@@ -145,6 +155,12 @@ export default function Projects() {
   return (
     <div id="projectblock">
       <div id="project">PROJECTS</div>
+      <Project
+        proj_title="DICED"
+        proj_date="Summer 2022"
+        proj_img={diced_img}
+        proj_body={diced_body}
+      />
       <Project
         proj_title="ScaredBot"
         proj_date="Spring 2021"
