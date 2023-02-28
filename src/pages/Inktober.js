@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import resume from "../downloads/Resume - 11162021.pdf";
+import resume from "../downloads/Resume.pdf";
 import GalleryImg from "../components/GalleryImg.js";
 import ink from "../img/inktober.jpg";
 import styled from "styled-components";

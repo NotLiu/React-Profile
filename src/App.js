@@ -43,7 +43,7 @@ class App extends Component {
                       <a href="#gallery" id="gallery">GALLERY</a>
                   </li> */}
               <li>
-                <Link to="/project" id="projects">
+                <Link to="/projects" id="projects">
                   PROJECTS
                 </Link>
               </li>
@@ -61,7 +61,7 @@ class App extends Component {
             <Route exact path="/">
               <About />
             </Route>
-            <Route path="/project">
+            <Route path="/projects">
               <Projects />
             </Route>
             <Route path="/gallery">

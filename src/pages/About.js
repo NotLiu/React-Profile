@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Parallax from "parallax-js";
 
 // resume
-import resume from "../downloads/Resume - 11162021.pdf";
+import resume from "../downloads/Resume.pdf";
 
 // import parallax images
 import stars_ast from "../img/stars-ast.gif";
@@ -152,8 +152,8 @@ export default function About() {
             Alongside my graduate studies I am currently doing work as a
             freelance illustrator and acting as the Art Director for Hallpass
             Studios. My current interests are in Computer Graphics, Software
-            Engineering, Artificial Intelligence and how these fields can be
-            applied in art.
+            Engineering, Artificial Intelligence, Game Development and how these
+            fields can be applied in conjunction with art.
             <br />
             <br />
             Over the course of my studies at NYU, I have learned and honed my
@@ -200,7 +200,15 @@ export default function About() {
             development.
           </p>
         </div>
-        <div id="backtotop">back to top</div>
+        <div
+          id="backtotop"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          style={{ fontSize: "26px", paddingBottom: "30px" }}
+        >
+          back to top
+        </div>
       </div>
     </div>
   );

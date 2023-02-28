@@ -13,8 +13,43 @@ import citation_img from "../img/citation.png";
 import SC_img from "../img/webapp.png";
 import scared_img from "../img/scaredbot.png";
 import diced_img from "../img/diced.gif";
+import progress_img from "../img/progress.png";
+import opengl_img from "../img/opengl.gif";
 
 export default function Projects() {
+  let opengl_body = (
+    <div>
+      <text>
+        During <i>Interactive Computer Graphics</i>, after completing projects
+        implementing techniques such as model generation, model reading, texture
+        UV mapping, render to texture, and deferred shading. This project was
+        meant to be a free-range application and exploration of advanced
+        graphics techniques.
+        <br />
+        Initially inspired by rolling hills and fireflies, the project
+        transformed to the starry landscape that we see now.
+        <br />
+        <br />
+        Written in C++, OpenGL, using GLEW.
+      </text>
+    </div>
+  );
+  let progress_body = (
+    <div>
+      <text>
+        React interactive progress bar is a NPM package built to provide an
+        expansive progress bar implementation with returning values and
+        customizable section and button generation. <br />
+        Part of a larger project 'Commission Tracker', which is not online yet.
+        Built using ReactJS, Typescript.
+        <br />
+        <a href="https://www.npmjs.com/package/react-interactive-progress-bar">
+          LINK
+        </a>
+        <br />
+      </text>
+    </div>
+  );
   let scared_body = (
     <div>
       <text>
@@ -155,6 +190,18 @@ export default function Projects() {
   return (
     <div id="projectblock">
       <div id="project">PROJECTS</div>
+      <Project
+        proj_title="OpenGL - WaveStarry"
+        proj_date="Fall 2022"
+        proj_img={opengl_img}
+        proj_body={opengl_body}
+      />
+      <Project
+        proj_title="React Interactive Progress Bar"
+        proj_date="Summer 2022"
+        proj_img={progress_img}
+        proj_body={progress_body}
+      />
       <Project
         proj_title="DICED"
         proj_date="Summer 2022"
