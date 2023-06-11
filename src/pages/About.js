@@ -160,21 +160,21 @@ export default function About() {
             skills in:
             <br />
             <code class="code">
-              React.js, Python, JavaScript, OpenGL, C++, SQL, MongoDB, C, Unity
-              and C#, ExpressJS, NodeJS, Jira Workflow, Adobe Photoshop, Figma,
-              Github terminal, Docker, and Tableau
+              React.js, Python, JavaScript, OpenGL, C++, Godot, SQL, MongoDB, C,
+              Unity and C#, ExpressJS, NodeJS, Jira Workflow, Adobe Photoshop,
+              Figma, Github terminal, Docker, and Tableau
             </code>
             <br />
             while taking the courses:
             <br />
             <br />
             <div class="colortext">
-              Operating Systems, Software Engineering, Data Visualization,
-              Design & Analysis of Algorithms, Data-Driven Decision Making,
-              Database Design and Implementation, Computer Networking, Computer
+              Offensive Security, Interactive Computer Graphics, Operating
+              Systems, Software Engineering, Data Visualization, Design &
+              Analysis of Algorithms, Data-Driven Decision Making, Database
+              Design and Implementation, Computer Networking, Computer
               Architecture, Data Structures, Introduction to Computer Music,
-              Intro to Game Dev, Computer Graphics, Introduction to Computer
-              Science, Introduction to Computer Programming
+              Game Design
             </div>
             <br />
             For my business studies, I have taken:

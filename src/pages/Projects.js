@@ -15,8 +15,43 @@ import scared_img from "../img/scaredbot.png";
 import diced_img from "../img/diced.gif";
 import progress_img from "../img/progress.png";
 import opengl_img from "../img/opengl.gif";
+import cleanAlpha_img from "../img/asepriteScript.png";
+import colorMeSilly_img from "../img/colormascot.gif";
 
 export default function Projects() {
+  let colorMeSilly_body = (
+    <div>
+      <text>
+        Game developed during <i>NYU Game Design 2023</i> focusing on game
+        characteristics, namely following the concepts of (Dexterity vs
+        Strategy), (Gameplay Heuristics), (Scaling Difficulty & Mastery). This
+        game is designed with several heuristics in mind, with a exceedingly
+        simple mechanic that still provides challenge and allows for player
+        mastery.
+        <br />
+        <br />
+        Built in Godot, assets by Me.
+        <br />
+        <a href="https://not-absent.itch.io/color-me-silly">LINK</a>
+      </text>
+    </div>
+  );
+  let cleanAlpha_body = (
+    <div>
+      <text>
+        Aseprite, the pixel art focused art / animation software, has the
+        ability to run custom scripts that can change how the software does most
+        functions including exports, reading images, layering. etc.
+        <br />
+        After encountering a problem with scaling, the interpolation resulted in
+        messy alpha artifacting, I decided to write my own script that read
+        through the image and cleaned up the interpolation alpha artifacts.
+        <br />
+        <br />
+        Written in Lua.
+      </text>
+    </div>
+  );
   let opengl_body = (
     <div>
       <text>
@@ -27,7 +62,12 @@ export default function Projects() {
         graphics techniques.
         <br />
         Initially inspired by rolling hills and fireflies, the project
-        transformed to the starry landscape that we see now.
+        transformed to the starry landscape that we see now. Procedrually
+        generated noise terrain, with randomly instanced snow / star objects
+        <br />
+        <br />
+        Implemented with applications of blinn-phong's illumination, flat
+        surface normals, ray tracing, perlin noise, bloom.
         <br />
         <br />
         Written in C++, OpenGL, using GLEW.
@@ -91,7 +131,11 @@ export default function Projects() {
         lot about what it takes to make a performant, interesting and
         educational web game.
         <br />
+        <br />
         Done in collaboration with NYU.
+        <br />
+        <br />
+        Website written and designed by me.
         <br />
         <a href="https://www.citationgame.com/">Game Homepage</a>
         <br />
@@ -191,6 +235,18 @@ export default function Projects() {
     <div id="projectblock">
       <div id="project">PROJECTS</div>
       <Project
+        proj_title="Color Me Silly"
+        proj_date="Spring 2023"
+        proj_img={colorMeSilly_img}
+        proj_body={colorMeSilly_body}
+      />
+      <Project
+        proj_title="Aseprite Alpha Cleaner"
+        proj_date="Winter 2023"
+        proj_img={cleanAlpha_img}
+        proj_body={cleanAlpha_body}
+      />
+      <Project
         proj_title="OpenGL - WaveStarry"
         proj_date="Fall 2022"
         proj_img={opengl_img}
@@ -210,7 +266,7 @@ export default function Projects() {
       />
       <Project
         proj_title="ScaredBot"
-        proj_date="Spring 2021"
+        proj_date="Spring 2022"
         proj_img={scared_img}
         proj_body={scared_body}
       />
@@ -221,16 +277,16 @@ export default function Projects() {
         proj_body={citation_body}
       />
       <Project
-        proj_title="Schwarz Christoffel Mapping"
-        proj_date="Winter 2020 - Summer 2021"
-        proj_img={SC_img}
-        proj_body={schwarz_body}
-      />
-      <Project
         proj_title="Duelality"
         proj_date="Spring 2022"
         proj_img={duelality_img}
         proj_body={duelality_body}
+      />
+      <Project
+        proj_title="Schwarz Christoffel Mapping"
+        proj_date="Winter 2020 - Summer 2021"
+        proj_img={SC_img}
+        proj_body={schwarz_body}
       />
       <Project
         proj_title="$10.65/hr"
