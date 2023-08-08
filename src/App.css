@@ -39,6 +39,7 @@
 
 body {
   background-color: rgb(8, 8, 8) !important;
+  overflow-x: hidden;
 }
 #body {
   /* position:absolute; */
@@ -442,4 +443,21 @@ body {
 
 #email {
   padding-left: 0.7em;
+}
+
+#starry-left {
+  position: absolute;
+  left: -17.5rem;
+  top: 20vh;
+  width: 37vw;
+  z-index: -1;
+}
+
+#starry-right {
+  position: absolute;
+  right: -17.5rem;
+  top: 20vh;
+  width: 37vw;
+  overflow-x: hidden;
+  z-index: -1;
 }

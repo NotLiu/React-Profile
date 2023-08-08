@@ -1,19 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-  Link,
-} from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, Switch, Link } from "react-router-dom";
 
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Gallery from "./pages/Gallery";
 import Inktober from "./pages/Inktober";
+import Work from "./pages/Work";
 
 class App extends Component {
   constructor(props) {
@@ -34,6 +29,11 @@ class App extends Component {
               </a>
             </div>
             <ul id="nav">
+              <li>
+                <Link to="/work" id="work">
+                  WORK
+                </Link>
+              </li>
               <li>
                 <Link to="/" id="about-but">
                   ABOUT
@@ -60,6 +60,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/">
               <About />
+            </Route>
+            <Route path="/work">
+              <Work />
             </Route>
             <Route path="/projects">
               <Projects />
