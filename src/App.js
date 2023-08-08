@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Component } from "react";
-import { BrowserRouter as Router, Redirect, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, Routes, Link } from "react-router-dom";
 
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -57,24 +57,19 @@ class App extends Component {
               </li>
             </ul>
           </div>
-          <Switch>
-            <Route exact path="/">
-              <About />
-            </Route>
-            <Route path="/work">
-              <Work />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/gallery">
-              <Gallery />
-            </Route>
-            <Route path="/inktober">
-              <Inktober />
-            </Route>
-            <Route path="/test"></Route>
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<About />} />
+
+            <Route path="/work" element={<Work />} />
+
+            <Route path="/projects" element={<Projects />} />
+
+            <Route path="/gallery" element={<Gallery />} />
+
+            <Route path="/inktober" element={<Inktober />} />
+
+            {/* <Route path="/test" element={} /> */}
+          </Routes>
         </div>
       </Router>
     );
