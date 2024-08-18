@@ -25,8 +25,7 @@ export default function About() {
   const BannerCSS = styled.img`
     width: ${(props) => (props.mts ? "125vw" : "100vw")};
     height: ${(props) => (props.legacy ? "105vh" : "100%")};
-    transform: scale(${(props) => (props.mts ? "1" : "1")})
-      translateY(${(props) => (props.mts ? "-25%" : "-0%")})
+    transform: scale(${(props) => (props.mts ? "1" : "1")}) translateY(${(props) => (props.mts ? "-25%" : "-0%")})
       translateX(${(props) => (props.mts ? "-15vw" : "0px")});
   `;
 
@@ -61,32 +60,16 @@ export default function About() {
       return (
         <div id="scene" ref={sceneEl}>
           <div ref={sceneEl} data-depth="0" data-limit-y="20">
-            <BannerCSS
-              legacy={bannerImgLegacy}
-              mts={false}
-              src={stars_starsbg}
-            />
+            <BannerCSS legacy={bannerImgLegacy} mts={false} src={stars_starsbg} />
           </div>
           <div ref={sceneEl} data-depth="0.2">
-            <BannerCSS
-              legacy={bannerImgLegacy}
-              mts={false}
-              src={stars_stars3}
-            />
+            <BannerCSS legacy={bannerImgLegacy} mts={false} src={stars_stars3} />
           </div>
           <div ref={sceneEl} data-depth="0.4">
-            <BannerCSS
-              legacy={bannerImgLegacy}
-              mts={false}
-              src={stars_stars2}
-            />
+            <BannerCSS legacy={bannerImgLegacy} mts={false} src={stars_stars2} />
           </div>
           <div ref={sceneEl} data-depth="0.5">
-            <BannerCSS
-              legacy={bannerImgLegacy}
-              mts={false}
-              src={stars_stars1}
-            />
+            <BannerCSS legacy={bannerImgLegacy} mts={false} src={stars_stars1} />
           </div>
           <div ref={sceneEl} data-depth="0.6">
             <BannerCSS legacy={bannerImgLegacy} mts={false} src={stars_ast} />
@@ -98,12 +81,7 @@ export default function About() {
             <BannerCSS legacy={bannerImgLegacy} mts={true} src={stars_mts2} />
           </div>
           <div ref={sceneEl} data-depth="1.1">
-            <BannerCSS
-              legacy={bannerImgLegacy}
-              mts={true}
-              src={stars_mts1}
-              style={{ transform: "translateX(-15vw) translateY(-20%)" }}
-            />
+            <BannerCSS legacy={bannerImgLegacy} mts={true} src={stars_mts1} style={{ transform: "translateX(-15vw) translateY(-20%)" }} />
           </div>
         </div>
       );
@@ -141,62 +119,45 @@ export default function About() {
         </div>
         <div id="about-text">
           <p>
-            Hi, I'm Andrew Liu and I'm from Houston, Texas.
+            Hi, I'm Andrew Liu! I'm a software developer, game dev, and artist! I am interested in all things creative coding, and I am currently
+            exploring more into computer graphics and shader code! Outside of computers, I have been trying to push myself in the gym and kitchen; I
+            can cook up some amazing brussel sprouts.
             <br />
             <br />
-            I am currently completing a Master's in Computer Science at New York
-            University. I completed my Bachelor's at NYU Shanghai with a major
-            in Computer Science, and a minor in business.
+            I completed my Masters in Computer Science at New York University. I completed my Bachelor's at NYU Shanghai with a major in Computer
+            Science, and a minor in business.
             <br />
             <br />
-            Alongside my graduate studies I am currently doing work as a
-            freelance illustrator and acting as the Art Director for Hallpass
-            Studios. My current interests are in Computer Graphics, Software
-            Engineering, Artificial Intelligence, Game Development and how these
-            fields can be applied in conjunction with art.
+            Alongside my graduate studies I had the privilege of working on some great projects. Some of which include working as part of Ken Perlin's
+            Future Reality Lab at NYU, a freelance illustrator, acting as the Art Director for Hallpass Studios. Bigger and better things are in the
+            works, namely a web and steam release of my game <code class="code">Color Me Silly</code> is in the works!
             <br />
             <br />
-            Over the course of my studies at NYU, I have learned and honed my
-            skills in:
+            Over the course of my studies at NYU, I have learned and honed my skills in:
             <br />
             <code class="code">
-              React.js, Python, JavaScript, OpenGL, C++, Godot, SQL, MongoDB, C,
-              Unity and C#, ExpressJS, NodeJS, Jira Workflow, Adobe Photoshop,
-              Figma, Github terminal, Docker, and Tableau
+              React.js, Python, Typescript, JavaScript, OpenGL, C++, Godot, SQL, MongoDB, Dasq, Apache Spark, Hadoop, C, Unity and C#, ExpressJS,
+              NodeJS, Jira Workflow, Adobe Photoshop, Figma, Github terminal, Docker, and Tableau
             </code>
             <br />
             while taking the courses:
             <br />
             <br />
             <div class="colortext">
-              Offensive Security, Interactive Computer Graphics, Operating
-              Systems, Software Engineering, Data Visualization, Design &
-              Analysis of Algorithms, Data-Driven Decision Making, Database
-              Design and Implementation, Computer Networking, Computer
-              Architecture, Data Structures, Introduction to Computer Music,
-              Game Design
+              Offensive Security, Interactive Computer Graphics, Big Data, Artificial Intelligence, Information Security, Operating Systems, Software
+              Engineering, Data Visualization, Design & Analysis of Algorithms, Data-Driven Decision Making, Database Design and Implementation,
+              Computer Networking, Computer Architecture, Data Structures, Introduction to Computer Music, Game Design
             </div>
             <br />
             For my business studies, I have taken:
             <br />
             <br />
             <div class="colortext">
-              Microeconomics, Statistics for Business and Economics, Principles
-              of Financial Accounting, Intro to Marketing, Economics for Global
-              Business, Business of Video Games, and Data-driven Decision
-              Making.
+              Microeconomics, Statistics for Business and Economics, Principles of Financial Accounting, Intro to Marketing, Economics for Global
+              Business, Business of Video Games, and Data-driven Decision Making.
             </div>
             <br />
-            My hobbies are in:{" "}
-            <code class="code">
-              digital art, video games, game development, bouldering, and random
-              exploration
-            </code>
-            .
-            <br />
-            <br />
-            I'm currently hoping to apply my skills in programming and artwork,
-            by working on projects in software engineering and video game
+            I'm currently hoping to apply my skills in programming and artwork, by working on projects in software engineering and video game
             development.
           </p>
         </div>
