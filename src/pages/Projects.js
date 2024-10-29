@@ -23,6 +23,7 @@ import mapc_60th_img from "../img/60th-mapc.png";
 import webapp_template_img from "../img/webapp-template.png";
 import rental_listings_img from "../img/rental-listings.png";
 import mapc_design_img from "../img/mapc-design-system.png";
+import perfect_fit_parking_img from "../img/perfect-fit.png";
 
 let mapc_regional_map = (
   <div>
@@ -55,6 +56,24 @@ let mapc_rental_listings_web = (
       The Metro Boston Rental Listings Database (RLDB) is a comprehensive database of point-level market value rental listings. This project is
       intended as a web portal to streamline the existing user workflow in retrieving raw data and data visualizations. This project also serves as a
       public facing interface to help present MAPC rental listings data to the public in a easy to access and catered portal.
+    </text>
+  </div>
+);
+
+let mapc_perfect_fit_parking = (
+  <div>
+    <text>
+      This was a Ruby on Rails project that I had inherited and did an overhaul to the design and UI/UX as part of the July 2023 Phase 4 data update.
+      This was mainly a collaboration between the data experts, communications team, and myself to make sure that all public facing data and text were
+      up to date and aligned with organization branding. A major part of the update was revamping the D3.js data visualization to be more interactive
+      and better present the data.
+      <br />
+      {/* <br /> */}
+      Primary changes were differentiating between phase data, implementing phase toggling and ensuring the brush UX worked properly for edge cases,
+      adding transit and jobs overlays according to new data, adding data point selection and table highlighting, added table field sorting.
+      <br />
+      <br />
+      Visit the page <a href="https://perfectfitparking.mapc.org/"> here</a>
     </text>
   </div>
 );
@@ -325,6 +344,7 @@ export default function Projects() {
         proj_body={mapc_regional_map}
       />
       <Project proj_title="Rental Listings" proj_date="Winter 2023" proj_img={rental_listings_img} proj_body={mapc_rental_listings_web} />
+      <Project proj_title="Perfect Fit Parking" proj_date="Fall 2023" proj_img={perfect_fit_parking_img} proj_body={mapc_perfect_fit_parking} />
       <Project proj_title="MAPC Webapp Templates" proj_date="Fall 2023" proj_img={webapp_template_img} proj_body={mapc_webapp_templates} />
       <Project
         proj_title="MAPC Design System"
